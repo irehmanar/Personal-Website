@@ -9,6 +9,7 @@
   margin-top: 100px;
   width: 400px;
   height: 400px;
+  object-fit: cover;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
