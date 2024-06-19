@@ -2,12 +2,13 @@ import React from 'react'
 
 import './About.css'
 import profileImg from '../../Assets/profile.jpeg'
+import theme from '../../Assets/theme_pattern.svg'
 function About() {
   return (
     <div className='about'>
         <div className="about-title">
           <h1>About me</h1>
-          <img src="" alt="" />
+          <img src={theme} alt="" />
         </div>
 
         <div className="about-sections">
