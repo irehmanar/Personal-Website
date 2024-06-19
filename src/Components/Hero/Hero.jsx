@@ -6,7 +6,7 @@ import profile from "../../Assets/profilePic.jpg";
 function Hero() {
   return (
     <div className="hero">
-      <img src={profile} alt="profile"/>
+      <img src={profile} alt="profile" />
       <h1>
         <span>I am Abdul Rehman,</span>frontend Developer from Pakistan.
       </h1>
