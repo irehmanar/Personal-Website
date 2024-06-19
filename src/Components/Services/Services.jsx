@@ -6,7 +6,7 @@ import theme from "../../Assets/theme_pattern.svg";
 
 function Services() {
   return (
-    <div className="services">
+    <div id="services" className="services">
       <div className="services-title">
         <h1>My Services</h1>
         <img src={theme} alt="" />

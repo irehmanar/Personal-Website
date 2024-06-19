@@ -2,17 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 20px;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-/* img{ */
-/* background: pink; */
-/* padding: 0px; */
-/* margin: 0px; */
-/* } */
+img {
+  padding: 0px;
+  margin: 0px;
+}
 
 .navBar .nav-menu {
-  /* background: wheat; */
   display: flex;
   align-items: center;
   list-style: none;
@@ -45,4 +44,21 @@
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.nav-menu li{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-menu li img{
+  display: flex;
+  margin: auto;
+}
+
+.anchor-link{
+  text-decoration: none;
+  color: aliceblue;
 }
