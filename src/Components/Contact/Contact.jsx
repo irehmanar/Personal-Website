@@ -4,6 +4,7 @@ import theme from "../../Assets/theme_pattern.svg";
 import call from "../../Assets/call_icon.svg";
 import location from "../../Assets/location_icon.svg";
 import mail from "../../Assets/mail_icon.svg";
+
 function Contact() {
   const [result, setResult] = useState(""); // Define state for result
   const onSubmit = async (event) => {
@@ -33,10 +34,11 @@ function Contact() {
     }
     alert(result);
   };
+
   return (
     <div id="contact" className="contact">
       <div className="contact-title">
-        <h1>Get in touch</h1>
+        <h1>Get in Touch</h1>
         <img src={theme} alt="" />
       </div>
 
@@ -44,37 +46,37 @@ function Contact() {
         <div className="contact-left">
           <h1>Let's Talk</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-            pariatur deserunt
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out to me via the form or contact details below.
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src={mail} alt="" />
+              <img src={mail} alt="email icon" />
               <p>abrehman4163@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <img src={call} alt="" />
-              <p>03024917965</p>
+              <img src={call} alt="phone icon" />
+              <p>03024917963</p>
             </div>
             <div className="contact-detail">
-              <img src={location} alt="" />
-              <p>CA, United State Okara</p>
+              <img src={location} alt="location icon" />
+              <p>Beruni Hostels, H-12 Islamabad</p>
             </div>
           </div>
         </div>
 
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="name">Your Name</label>
-          <input type="text" placeholder="Enter your name" name="name" />
+          <input type="text" placeholder="Enter your name" name="name" required />
           <label htmlFor="email">Your Email</label>
-          <input type="email" placeholder="Enter your email" name="email" />
+          <input type="email" placeholder="Enter your email" name="email" required />
           <label htmlFor="message">Write your Message</label>
           <textarea
             name="message"
             rows="8"
             placeholder="Enter your message"
+            required
           ></textarea>
-          <button className="contact-submit">Submit now</button>
+          <button className="contact-submit">Submit Now</button>
         </form>
       </div>
     </div>

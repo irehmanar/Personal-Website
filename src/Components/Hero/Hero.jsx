@@ -8,9 +8,12 @@ function Hero() {
     <div id="home" className="hero">
       <img src={profile} alt="profile" />
       <h1>
-        <span>I am Abdul Rehman,</span>frontend Developer from Pakistan.
+        <span>I'm Abdul Rehman,</span> a Frontend Developer from Pakistan.
       </h1>
-      <p>I am frontend Developer from Islamabad with 1 year of exprience</p>
+      <p>
+        Based in Islamabad, I have one year of experience in frontend
+        development.
+      </p>
 
       <div className="hero-action">
         <div className="hero-connect">
