@@ -151,11 +151,32 @@
   .contact .contact-section {
     flex-direction: column;
   }
+  .contact .contact-left {
+    justify-content: center;
+  }
   .contact .contact-right input {
     width: 100%;
   }
   .contact .contact-right textarea {
     width: 95%;
     background: pink;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact .contact-right input {
+    width: 90%;
+  }
+  .contact .contact-right textarea {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contact .contact-right input {
+    width: 80%;
+  }
+  .contact .contact-right textarea {
+    width: 70%;
   }
 }

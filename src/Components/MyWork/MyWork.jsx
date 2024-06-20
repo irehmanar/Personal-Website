@@ -8,7 +8,7 @@ function MyWork() {
   return (
     <div id="work" className="MyWork">
       <div className="mywork-title">
-        <h1>My Latestmk Work</h1>
+        <h1>My Latest Work</h1>
         <img src={theme} alt="" />
       </div>
 

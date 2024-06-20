@@ -28,7 +28,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* min-width: 250px; */
   gap: 20px;
   padding: 60px;
   -webkit-border-radius: 10px;
@@ -139,5 +138,9 @@
 @media (max-width: 410px) {
   .services .services-container {
     grid-template-columns: 1fr;
+  }
+
+  .services .Services-format{
+    padding: 40px;
   }
 }
