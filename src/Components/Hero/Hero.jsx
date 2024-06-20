@@ -8,7 +8,7 @@ function Hero() {
     <div id="home" className="hero">
       <img src={profile} alt="profile" />
       <h1>
-        <span>I'm Abdul Rehman,</span> a Frontend Developer from Pakistan.
+        <span>I'm Abdul Rehman,</span> a MERN Stack Developer from Pakistan.
       </h1>
       <p>
         Based in Islamabad, I have one year of experience in frontend
