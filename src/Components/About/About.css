@@ -32,7 +32,12 @@
 .about .about-left img {
   width: 300px;
   height: 300px;
-  padding-top: 50%;
+  margin-top: 50%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
 }
 
 .about .about-right {
@@ -143,4 +148,110 @@
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+.service__list-icon{
+  /* color: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%); */
+  color: #b415ff;
+
+}
+
+.about .SkillsHeading{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    gap: 10px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+
+  .about .about-title h1 {
+    font-size: 50px;
+  }
+
+  .about .about-title img {
+    display: none;
+  }
+
+  .about .about-sections {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .about-left img {
+    margin-top: 10%;
+  }
+
+  .about .about-para {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .about .about-skill {
+    gap: 20px;
+    align-items: center;
+  }
+  .about .about-skill p {
+    font-size: 16px;
+  }
+  .about .about-skill hr {
+    height: 6px;
+  }
+
+  .about .about-achievements {
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .about .about-achievement {
+    gap: 10px;
+  }
+
+  .about .about-achievement h1 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .about .about-achievement p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  .about .about-achievements {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about .about-title h1 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .about .about-skill hr{
+    display: none;
+  }
+  .about .SkillsHeading{
+    display: block;
+    text-align: center;
+    background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    padding: 0;
+  }
+  .about .about-skill{
+    justify-content: center;
+  }
+  .about .about-skill:hover{
+    background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }

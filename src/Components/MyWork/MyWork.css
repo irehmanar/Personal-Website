@@ -26,7 +26,7 @@
 
 .MyWork .mywork-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
@@ -85,16 +85,30 @@
 
 .MyWork a {
   color: #b4b4b4;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .MyWork .portfolio__container {
+@media (max-width: 1770px) {
+  .MyWork .mywork-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .MyWork .portfolio__container {
+@media screen and (max-width: 1170px) {
+  .MyWork {
+    gap: 10px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+
+  .MyWork .mywork-title h1 {
+    font-size: 50px;
+  }
+
+  .MyWork .mywork-title img {
+    display: none;
+  }
+  .MyWork .mywork-container {
     grid-template-columns: 1fr;
     gap: 1rem;
   }

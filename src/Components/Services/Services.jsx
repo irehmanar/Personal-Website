@@ -1,7 +1,7 @@
 import React from "react";
 import "./Services.css";
 import Services_Data from "../../Assets/services_data";
-import arrow_icon from "../../Assets/arrow_icon.svg";
+// import arrow_icon from "../../Assets/arrow_icon.svg";
 import theme from "../../Assets/theme_pattern.svg";
 
 function Services() {
@@ -19,10 +19,10 @@ function Services() {
               <h3>{service.s_no}</h3>
               <h2>{service.s_name}</h2>
               <p>{service.s_desc}</p>
-              <div className="services-readmore">
+              {/* <div className="services-readmore">
                 <p>Read more</p>
                 <img src={arrow_icon} alt="" />
-              </div>
+              </div> */}
             </div>
           );
         })}
