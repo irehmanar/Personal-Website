@@ -1,5 +1,6 @@
 .navBar {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
   padding: 0 20px;
@@ -23,6 +24,7 @@ img {
 
 .navBar .nav-connect {
   padding: 20px;
+  margin-right: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -61,4 +63,66 @@ img {
 .anchor-link{
   text-decoration: none;
   color: aliceblue;
+}
+.nav-mob-open,.nav-mob-close{
+  display: none;
+}
+
+
+
+
+@media (max-width:1100px) {
+  .nav-connect{
+    display: none;
+  }
+}
+
+@media (max-width:930px) {
+  .navBar{
+    width: 100%;
+    justify-content: start;
+  }
+
+  .nav-connect{
+    display: none;
+  }
+
+  .nav-mob-open{
+    display: block;
+    position: fixed;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .nav-mob-close{
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 220px;
+    width: 30px;
+  }
+  .nav-menu{
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    /*justify-content: center;
+    */background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    gap: 30px;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    -webkit-transition: right 0.9s;
+    -moz-transition: right 0.9s;
+    -ms-transition: right 0.9s;
+    -o-transition: right 0.9s;
+    transition: right 0.9s;
+    right: -420px;
+}
+  .nav-menu li{
+    font-size: 30px;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+  }
 }
