@@ -17,7 +17,7 @@ function Contact() {
     // Send POST request to Web3Forms API
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     // Parse response as JSON
@@ -31,19 +31,16 @@ function Contact() {
       console.log("Error", data);
       setResult(data.message); // Update state with error message
     }
-    alert(result)
+    alert(result);
   };
   return (
     <div id="contact" className="contact">
-      {/* Contact Title Section */}
       <div className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme} alt="" />
       </div>
 
-      {/* Contact Details and Form Section */}
       <div className="contact-section">
-        {/* Left Section: Contact Details */}
         <div className="contact-left">
           <h1>Let's Talk</h1>
           <p>
@@ -51,17 +48,14 @@ function Contact() {
             pariatur deserunt
           </p>
           <div className="contact-details">
-            {/* Contact Detail: Email */}
             <div className="contact-detail">
               <img src={mail} alt="" />
               <p>abrehman4163@gmail.com</p>
             </div>
-            {/* Contact Detail: Phone */}
             <div className="contact-detail">
               <img src={call} alt="" />
               <p>03024917965</p>
             </div>
-            {/* Contact Detail: Location */}
             <div className="contact-detail">
               <img src={location} alt="" />
               <p>CA, United State Okara</p>
@@ -69,22 +63,22 @@ function Contact() {
           </div>
         </div>
 
-        {/* Right Section: Contact Form */}
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor="name">Your Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="email">Your Email</label>
           <input type="email" placeholder="Enter your email" name="email" />
           <label htmlFor="message">Write your Message</label>
-          <textarea name="message" rows="8" placeholder="Enter your message"></textarea>
-          <button className="contact-submit">
-            Submit now
-          </button>
+          <textarea
+            name="message"
+            rows="8"
+            placeholder="Enter your message"
+          ></textarea>
+          <button className="contact-submit">Submit now</button>
         </form>
       </div>
     </div>
   );
 }
-
 
 export default Contact;

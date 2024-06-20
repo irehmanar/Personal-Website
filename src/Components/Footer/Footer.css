@@ -74,12 +74,6 @@ footer a:hover {
   transition: 0.4s;
 }
 
-@media screen and (max-width: 1024px) {
-  footer {
-    margin-top: 50rem;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .permalinks {
     flex-direction: column;
@@ -88,9 +82,5 @@ footer a:hover {
 
   .footer__socials {
     margin-bottom: 2.6rem;
-  }
-
-  footer {
-    margin-top: 50rem;
   }
 }

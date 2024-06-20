@@ -3,7 +3,7 @@ import React from "react";
 import "./About.css";
 import profileImg from "../../Assets/profile.jpeg";
 import theme from "../../Assets/theme_pattern.svg";
-import {BiCheck} from 'react-icons/bi'
+import { BiCheck } from "react-icons/bi";
 function About() {
   return (
     <div id="about" className="about">
@@ -36,32 +36,32 @@ function About() {
 
           <div className="about-skills">
             <div className="about-skill">
-            <BiCheck className='service__list-icon'/>
-            <p>HTMLL & CSS</p>
+              <BiCheck className="service__list-icon" />
+              <p>HTMLL & CSS</p>
               <hr style={{ width: "70%" }} />
             </div>
             <div className="about-skill">
-            <BiCheck className='service__list-icon'/>
+              <BiCheck className="service__list-icon" />
               <p>React Js</p>
               <hr style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
-            <BiCheck className='service__list-icon'/>
+              <BiCheck className="service__list-icon" />
               <p>Git & Github</p>
               <hr style={{ width: "50%" }} />
             </div>
             <div className="about-skill">
-            <BiCheck className='service__list-icon'/>
+              <BiCheck className="service__list-icon" />
               <p>Express </p>
               <hr style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
-            <BiCheck className='service__list-icon'/>
+              <BiCheck className="service__list-icon" />
               <p>Node Js </p>
               <hr style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
-            <BiCheck className='service__list-icon'/>
+              <BiCheck className="service__list-icon" />
               <p>Mongo DB</p>
               <hr style={{ width: "70%" }} />
             </div>

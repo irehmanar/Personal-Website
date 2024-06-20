@@ -2,7 +2,7 @@ import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll"; // Import AnchorLink after installing the package
 import "./Hero.css";
 import profile from "../../Assets/profilePic.jpg";
-import CV from '../../Assets/CV_AbdulRehman.pdf'
+import CV from "../../Assets/CV_AbdulRehman.pdf";
 function Hero() {
   return (
     <div id="home" className="hero">
@@ -19,7 +19,9 @@ function Hero() {
           </AnchorLink>
         </div>
         <div className="hero-resume">
-        <a href={CV} download className='btn'>My Resume</a>
+          <a href={CV} download className="btn">
+            My Resume
+          </a>
         </div>
       </div>
     </div>

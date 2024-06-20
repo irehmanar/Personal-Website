@@ -27,7 +27,7 @@
 .MyWork .mywork-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 80px;
 }
 
 .MyWork .portfolio__item {
@@ -37,6 +37,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
+  overflow: hidden;
 }
 
 .MyWork .portfolio__item:hover {
@@ -46,11 +49,12 @@
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
   transform: scale(1.05);
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  border: 2px solid #b415ff;
 }
 
 .MyWork .portfolio__item-image {
@@ -91,7 +95,7 @@
 @media (max-width: 1770px) {
   .MyWork .mywork-container {
     grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+    gap: 80px;
   }
 }
 @media screen and (max-width: 1170px) {

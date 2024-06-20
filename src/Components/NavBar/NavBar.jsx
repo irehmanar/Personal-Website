@@ -15,26 +15,38 @@ function NavBar() {
   const openMenu = () => {
     console.log("hello");
     menuRef.current.style.right = "0px";
-    setOpen(false)
-
+    setOpen(false);
   };
   const closeMenu = () => {
     console.log("hello 12");
     menuRef.current.style.right = "-420px";
-    setOpen(true)
+    setOpen(true);
   };
 
   return (
     <div className="navBar">
       <img src={logo} alt="Abdul Rehman" className="logo" />
-      {open?<img onClick={openMenu} src={menuOpen} alt="" className="nav-mob-open"/>:''}
-      <ul ref={menuRef} className="nav-menu">
-        {!open?<img
-          onClick={closeMenu}
-          src={menuClose}
+      {open ? (
+        <img
+          onClick={openMenu}
+          src={menuOpen}
           alt=""
-          className="nav-mob-close"
-        />:''}
+          className="nav-mob-open"
+        />
+      ) : (
+        ""
+      )}
+      <ul ref={menuRef} className="nav-menu">
+        {!open ? (
+          <img
+            onClick={closeMenu}
+            src={menuClose}
+            alt=""
+            className="nav-mob-close"
+          />
+        ) : (
+          ""
+        )}
 
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#home">

@@ -150,13 +150,12 @@
   transition: 0.5s;
 }
 
-.service__list-icon{
+.service__list-icon {
   /* color: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%); */
   color: #b415ff;
-
 }
 
-.about .SkillsHeading{
+.about .SkillsHeading {
   display: none;
 }
 
@@ -232,10 +231,10 @@
 }
 
 @media (max-width: 580px) {
-  .about .about-skill hr{
+  .about .about-skill hr {
     display: none;
   }
-  .about .SkillsHeading{
+  .about .SkillsHeading {
     display: block;
     text-align: center;
     background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
@@ -245,10 +244,10 @@
     margin: 0;
     padding: 0;
   }
-  .about .about-skill{
+  .about .about-skill {
     justify-content: center;
   }
-  .about .about-skill:hover{
+  .about .about-skill:hover {
     background: linear-gradient(270deg, #df8908 50.41%, #b415ff 90.25%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
