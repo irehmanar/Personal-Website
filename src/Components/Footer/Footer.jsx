@@ -1,8 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
@@ -10,37 +9,28 @@ function Footer() {
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Experience</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a href="#work">Work</a>
         </li>
         <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Testimonials</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com">
-          <FaFacebook />
+        <a href="https://github.com/irehmanar">
+          <FaGithub />
         </a>
-        <a href="https://instagram.com">
-          <FaInstagramSquare />
-        </a>
-        <a href="https://twitter.com">
-          <FaXTwitter />
+        <a href="https://www.linkedin.com/in/abdul-rehman-aa0b5324b?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BTqg0XSN2SOCBUApzBqHnTQ%3D%3D">
+          <FaLinkedin />
         </a>
       </div>
 
