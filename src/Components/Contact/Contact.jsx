@@ -59,7 +59,7 @@ function Contact() {
             </div>
             <div className="contact-detail">
               <img src={location} alt="location icon" />
-              <p>Beruni Hostels, H-12 Islamabad</p>
+              <p>NUST H-12 Islamabad</p>
             </div>
           </div>
         </div>
